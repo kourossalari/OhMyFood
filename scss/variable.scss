@@ -1,0 +1,25 @@
+// 🎨 Couleurs principales
+$violet: #9356DC;
+$rose: #FF79DA;
+$vert-clair: #99E2D0;
+$vert-foncer: #008766;
+$noir : #000000;
+
+// ⚙️ Couleurs secondaires
+$gris-clair: #F6F6F6;
+$gris-foncer: #353535;
+
+// 💬 Couleurs texte / footer
+$footer: #353535;
+$texte-footer: #FFFFFF;
+
+// 💙 Autres teintes (si tu veux des variantes)
+$bleu-clair: #89C8FA;
+$bleu-foncer: #003A68;
+
+// 💫 Dégradés et animations
+$linear-button: linear-gradient(193deg, $violet -11.44%, $rose 123.93%);
+$linear-button-simple: linear-gradient($rose, $violet);
+$anim-bouton: $vert-clair;
+
+$font-primary: 'Roboto', sans-serif;

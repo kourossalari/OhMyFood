@@ -1,0 +1,241 @@
+@import "libs/reset.scss";
+@import "variable.scss";
+
+.page2 {
+  font-family: sans-serif;
+  }
+
+  header {
+
+  .logo-ohmyfood-2 {
+    display: flex;
+    width: 100%;
+    height: 63px;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    box-shadow: none;
+
+    .fleche-de-gauche {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      color: #353535;
+      text-decoration: none;
+    }
+
+    img {
+      height: 36px;
+    }
+   }
+  }
+ main {
+  width: 100%;
+
+ img {
+  width: 100%; 
+  height: 275px;
+  object-fit: cover;
+ }
+
+  .La-palette-du-gout {
+    width: 100%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background: $gris-clair;
+    margin: -50px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .titre-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    height: 27px;
+    margin: 32px 17px 42px 17px;
+
+    .coeur {
+      margin-top: -20px;
+    }
+
+    h1 {
+    font-size: 28px;
+    font-weight: 400;
+    font-family: Shrikhand;
+    margin: 0;
+    }
+  }
+
+.menu {
+  background: $gris-clair;
+  width: 100%;
+  
+  h2 { 
+    font-family: Roboto;
+    font-weight: 300;
+    margin: 0;
+    font-size: 16px;
+  }
+}
+
+.entree {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-right: 13px;
+  padding-left: 13px;
+  gap: 12px;
+}
+
+  .card-menu {
+    background: $texte-footer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        border: transparent;
+        overflow: hidden;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        height: 72px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        
+        .clique {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          transition: transform 0.4s ease;
+        }
+
+        .card-text {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          margin-left: 15px;
+          width: 287px;
+          transition: transform 0.4s ease;
+        }
+
+        h3 {
+          font-weight: 500;
+          font-family: roboto;
+          font-size: 18px;
+        }
+
+        p {
+          font-weight: 300;
+          font-family: roboto;
+          font-size: 15.04px;
+          flex-wrap: wrap;
+        }
+
+        .prix {
+              margin-top: 26px;
+              margin-left: 30px;
+              font-weight: 700;
+              font-family: roboto;
+              font-size: 15.04px;
+        }
+        }
+
+        .titre-plus-barre {
+          display: flex;
+          flex-direction: column;
+          margin: 48px 80px 0 20px;
+        }
+
+        .separator {
+          width: 40px;
+          height: 3px;
+          border: none;
+          background: $vert-clair;
+          margin: 10px 0;
+          border-radius: 10px;
+        }
+
+        .button-explorer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+
+        .button-2 {
+        margin-top: 40px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        border: transparent;
+        width: 186px;
+        height: 50px;
+        background: linear-gradient(#FF79DA,#9356DC);
+        color: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        }
+      }
+      
+      .fond-vert {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 59.84px;
+      height: 100%;
+      transform: translateX(100%);
+      transition: transform 0.4s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $vert-clair;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+
+      .icone-border {
+        width: 22px;
+        border-radius: 60px;
+        padding: 1px;
+        background: $texte-footer;
+        justify-content: center;
+        align-items: center;
+        display: inline-block;
+      }
+      }
+
+      .card-menu:hover .fond-vert {
+        transform: translateX(0);
+      }
+
+        .card-menu:hover .clique h3  {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 100%;
+        display: block;
+      }
+
+      .card-menu:hover .clique p  {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 100%;
+        display: block;
+      }
+
+      .card-menu:hover .clique {
+        transition: transform 0.4s ease;
+
+        .card-text {
+          width: 230px;
+          transition: transform 0.4s ease;
+        }
+      }
+}
+
+  

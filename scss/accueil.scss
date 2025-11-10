@@ -1,0 +1,333 @@
+@import "libs/reset.scss";
+@import "variable.scss";
+@import "Restaurant.scss";
+
+.page-accueil {
+    font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .logo-ohmyfood {
+    display: flex;
+    width: 100%;
+    height: 63px;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    img {
+      height: 36px;
+      width: 197px;
+      display: block;
+  }
+  }
+
+    .localisation {
+        background: #EAEAEA;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 17px;
+        width: 100%;
+        height: 50px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        
+        p {
+          font-size: 16px;
+          font-family: roboto;
+          font-weight: 500;
+        }
+    }
+}
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+    .nos-restaurants {
+        background: $gris-clair;
+        width :100% ;
+        position: relative;
+        z-index: -10;
+    }
+
+    .titre {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top :38px ;
+
+        h1 {
+        font-weight: bolder;
+        font-style: $font-primary;
+        font-size: 24px;
+        width: 70%;
+        height: 68px;
+        }
+    }
+
+    .para {
+        font-size: 18px;
+        margin-bottom: 27px;
+        text-align: center;
+    }
+
+    .button-explorer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 57px;
+
+        .button {
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        border: transparent;
+        width: 218px;
+        height: 50px;
+        background: linear-gradient(#FF79DA,#9356DC);
+        color: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        }
+    }
+
+    h2 {
+        font-size: 24px;
+        margin: 48px 80px 26px 20px;
+        font-weight: bolder;
+    }
+
+    .resto-fonc {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .icone-chiffre {
+        display: flex;
+        justify-content: center;
+        padding: 5px 2px ;
+        border-radius: 20px;
+        width: 24px;
+        height: 24px;
+        border: transparent;
+        background: $violet;
+        position: relative;
+        margin-right: -15px;
+
+        p {
+            font-size: 14.18px;
+            color: $texte-footer;
+        }
+    }
+
+    .resto-fonc-1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 27px;
+        background: $gris-clair;
+        border: transparent;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        width: 322px;
+        height: 72px;
+        margin-bottom: 24.92px;
+
+        i {
+            margin-left: 33.47px;
+        }
+
+        p {
+        font-size: 16px;
+        font-weight: 500;
+        }
+    }
+
+    .restaurants {
+        background: $gris-clair;
+        width: 100%;
+        padding-bottom: 66px;
+
+        h2 {
+        margin-top: 54px;
+        margin-left: 20px
+        }
+    }
+
+    .card-contenaire {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .card-resto {
+        width: 80%;
+        background: $texte-footer;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        position: relative;
+        
+        img { 
+        width: 100%;
+        height: 174px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        object-fit: cover;
+        display: block;
+        }
+        
+        .img-plus-badge {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nouveau {
+            background: $vert-clair;
+            color: $vert-foncer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:80px;
+            height: 29px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 14px;
+        }
+
+        .card-txt {
+            width: 100%;
+            margin: 12px 0 12px 13px;
+        }
+
+        h3 { 
+            font-weight: 700;
+            font-size: 18px;
+        }
+        p {
+            font-size: 17px;
+        }
+    }
+
+    .bas-de-card {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+}
+
+.button-coeur {
+  position: absolute;
+  top: 190px;
+  right: 50px;
+  z-index: 2;
+}
+
+.coeur {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 22px;
+
+  input { 
+    display: none;
+  }
+
+  .coeur-vide,
+  .coeur-plein {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .coeur-vide {
+    color: $noir;
+    opacity: 1;
+  }
+
+  .coeur-plein {
+    display: inline-block;
+    background: $linear-button;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+  }
+
+  input:checked + .coeur-vide {
+    opacity: 0;
+  }
+
+  input:checked ~ .coeur-plein {
+    opacity: 1;
+   }
+  }
+}
+
+footer {
+    background: $footer;
+    width: 100%;
+    height: 186px;
+
+    img { 
+        color: $texte-footer;
+        width: 137px;
+        height: 27px;
+        margin: 22px 0 16px 25px;
+        font-weight: 400;
+        font-size: 18px;
+        filter: brightness(0) invert(1);
+    }
+
+    .txt-footer {
+        display: flex;
+        color:$texte-footer;
+        gap: 7px;
+        flex-direction: column;
+        margin-left: 25px;
+    }
+
+    .couvert {
+      display: flex;
+        flex-direction: row;
+        gap: 11px;
+        font-weight: 500;
+    }
+
+    .partenaire {
+        display: flex;
+        flex-direction: row;
+        gap: 11px;
+        font-weight: 500;
+    }
+
+    .moins {
+      font-weight: 400;
+    }
+}
