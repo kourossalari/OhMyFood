@@ -1,3 +1,4 @@
+
 @import "libs/reset.scss";
 @import "variable.scss";
 
@@ -61,6 +62,7 @@
 
     .coeur {
       margin-top: -20px;
+      position: relative;
     }
 
     h1 {
@@ -160,11 +162,17 @@
           border-radius: 10px;
         }
 
-        .button-explorer {
+           .back-button {
+          background: $gris-clair;
+          width: 100%;
+          padding-bottom: 40px;
+        }
+
+        .button-explorer2 {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 40px;
+
 
         .button-2 {
         margin-top: 40px;
@@ -237,5 +245,4 @@
         }
       }
 }
-
-  
+ @import "desktop-restaurants.scss";

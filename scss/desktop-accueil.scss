@@ -1,0 +1,115 @@
+
+@media screen and (min-width: 1024px) {
+
+    header {
+    
+    .logo-ohmyfood {
+    box-shadow: none;
+    height: 96px;
+  }
+
+   .localisation {
+    box-shadow: none;
+  }
+} 
+
+main .titre {
+    
+    h1 {
+        font-size: 40px;
+    }
+}
+
+main {
+    .nos-restaurants {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .button-explorer {
+        margin-bottom: 30px;
+    }
+}
+
+main .fonctionnement {
+    width: 100%;
+    height: 228.37px;
+    padding: 0;
+
+    h2 {
+        margin-left: 18%;
+    }
+
+    .fonc-ordi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin: 0 207px 50px 180px
+    }
+
+    .resto-fonc-1 {
+        margin-bottom: 0;
+        width: 322.48px;
+    }
+
+    .last {
+        margin: 0;
+    }
+}
+
+main .restaurants {
+
+
+    .card-contenaire {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card-resto {
+        width: 490px;
+        height: 251px;
+    }
+
+    .card-1 {
+        margin-right: 100px;
+        margin-bottom: 50px;
+    }
+
+    .card-2 {
+        margin-bottom: 50px;
+    }
+
+    .card-3 {
+        margin-right: 100px;
+    }
+
+    h2 {
+        margin-top: 30px;
+        margin-left: 18%;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 114px;
+    width: 100%;
+
+    img {
+        margin: 64px 18px 30px 16px;
+    }
+
+    .txt-footer {
+        flex-direction: row;
+        gap: 7px;
+        margin-bottom: 30px;
+        margin-top: 64px;
+    }
+
+
+}
+}

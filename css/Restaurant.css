@@ -97,6 +97,7 @@ main .titre-2 {
 }
 main .titre-2 .coeur {
   margin-top: -20px;
+  position: relative;
 }
 main .titre-2 h1 {
   font-size: 28px;
@@ -182,13 +183,17 @@ main .separator {
   margin: 10px 0;
   border-radius: 10px;
 }
-main .button-explorer {
+main .back-button {
+  background: #F6F6F6;
+  width: 100%;
+  padding-bottom: 40px;
+}
+main .button-explorer2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
 }
-main .button-explorer .button-2 {
+main .button-explorer2 .button-2 {
   margin-top: 40px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
@@ -249,6 +254,26 @@ main .card-menu:hover .clique {
 main .card-menu:hover .clique .card-text {
   width: 230px;
   transition: transform 0.4s ease;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-2 {
+    padding-left: 192px;
+    padding-right: 192px;
+  }
+  .main-2 .titre-2 {
+    justify-content: center;
+  }
+  .main-2 .menu {
+    padding-left: 210px;
+    padding-right: 211px;
+  }
+  .main-2 .card-menu .card-text {
+    width: 572px;
+  }
+  .main-2 .card-menu:hover .clique .card-text {
+    width: 535px;
+  }
 }
 
 /*# sourceMappingURL=Restaurant.css.map */

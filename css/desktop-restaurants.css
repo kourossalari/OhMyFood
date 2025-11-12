@@ -1,0 +1,21 @@
+@media screen and (min-width: 1024px) {
+  .main-2 {
+    padding-left: 192px;
+    padding-right: 192px;
+  }
+  .main-2 .titre-2 {
+    justify-content: center;
+  }
+  .main-2 .menu {
+    padding-left: 210px;
+    padding-right: 211px;
+  }
+  .main-2 .card-menu .card-text {
+    width: 572px;
+  }
+  .main-2 .card-menu:hover .clique .card-text {
+    width: 535px;
+  }
+}
+
+/*# sourceMappingURL=desktop-restaurants.css.map */
