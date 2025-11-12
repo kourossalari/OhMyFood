@@ -6,6 +6,9 @@
   header .localisation {
     box-shadow: none;
   }
+  header .img-header {
+    height: 383px;
+  }
   main .titre h1 {
     font-size: 40px;
   }
