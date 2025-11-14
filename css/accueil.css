@@ -154,7 +154,7 @@ main .menu {
   width: 100%;
 }
 main .menu h2 {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   margin: 0;
   font-size: 16px;
@@ -198,12 +198,12 @@ main .card-menu .card-text {
 }
 main .card-menu h3 {
   font-weight: 500;
-  font-family: roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
 }
 main .card-menu p {
   font-weight: 300;
-  font-family: roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 15.04px;
   flex-wrap: wrap;
 }
@@ -211,7 +211,7 @@ main .card-menu .prix {
   margin-top: 26px;
   margin-left: 30px;
   font-weight: 700;
-  font-family: roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 15.04px;
 }
 main .titre-plus-barre {
@@ -270,6 +270,7 @@ main .fond-vert .icone-border {
   width: 22px;
   border-radius: 60px;
   padding: 1px;
+  padding-left: 4px;
   background: #FFFFFF;
   justify-content: center;
   align-items: center;
