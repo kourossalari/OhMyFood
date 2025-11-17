@@ -44,7 +44,7 @@ header {
         
         p {
           font-size: 16px;
-          font-family: roboto;
+          font-family: $font-primary;
           font-weight: 500;
         }
     }
@@ -100,10 +100,7 @@ header {
         margin-bottom: 57px;
 
         .button {
-        border-bottom-left-radius: 40px;
-        border-bottom-right-radius: 40px;
-        border-top-left-radius: 40px;
-        border-top-right-radius: 40px;
+        border-radius: 40px;
         border: transparent;
         width: 218px;
         height: 50px;
@@ -161,10 +158,7 @@ header {
         gap: 27px;
         background: $gris-clair;
         border: transparent;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        border-radius: 20px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
         width: 100%;
         height: 72px;
@@ -327,15 +321,6 @@ footer {
 
     .couvert {
       display: flex;
-        flex-direction: row;
-        gap: 11px;
-        font-weight: 500;
-        width: 190px;
-        font-family: $font-primary;
-    }
-
-    .partenaire {
-        display: flex;
         flex-direction: row;
         gap: 11px;
         font-weight: 500;
