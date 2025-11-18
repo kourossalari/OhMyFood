@@ -91,166 +91,168 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-right: 13px;
-  padding-left: 13px;
+  padding: 0 13px;
   gap: 12px;
 }
 
-  .card-menu {
+.card-menu {
+  background: $texte-footer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: transparent;
+  overflow: hidden;
+  border-radius: 20px;
+  height: 72px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+  .clique {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 55px;
+    margin-right: 15px;
+    transition: all 0.40s ease;
+  }
+
+  .card-text {
+    flex: 1;       
+    min-width: 0;     
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 15px;
+    max-width: calc(100% - 115px);
+  }
+
+  h3 {
+    font-weight: 500;
+    font-family: $font-primary;
+    font-size: 18px;
+  }
+
+  p {
+    font-weight: 300;
+    font-family: $font-primary;
+    font-size: 15.04px;
+    flex-wrap: wrap;
+  }
+
+  .prix {
+    flex-shrink: 0; 
+    font-weight: 700;
+    font-family: $font-primary;
+    font-size: 15.04px;
+    margin: 0; 
+    transition: all 0.4s ease;
+  }
+}
+
+.card-menu .clique h3,
+.card-menu .clique p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: block;
+}
+
+.card-menu:hover .prix {
+    margin-right: 55px;
+    transition: all 0.4s ease;
+  }
+
+.titre-plus-barre {
+  display: flex;
+  flex-direction: column;
+  margin: 48px 80px 0 20px;
+}
+
+.separator {
+  width: 40px;
+  height: 3px;
+  border: none;
+  background: $vert-clair;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.back-button {
+  background: $gris-clair;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.button-explorer2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .button-2 {
+    font-size: 16px;
+    margin-top: 40px;
+    border-radius: 40px;
+    border: transparent;
+    width: 186px;
+    height: 50px;
+    background: linear-gradient(#FF79DA,#9356DC);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+}
+
+.button-explorer2 .button-2:hover {
+  opacity: 0.85;
+  box-shadow: 1px 2px 9px 5px rgba(0,0,0,0.18);
+  font-size: 16.1px;
+}
+
+.fond-vert {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 59.84px;
+  height: 100%;
+  transform: translateX(100%);
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $vert-clair;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  .icone-border {
+    width: 22px;
+    border-radius: 60px;
+    padding: 1px 4px;
     background: $texte-footer;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        position: relative;
-        border: transparent;
-        overflow: hidden;
-        border-radius: 20px;
-        height: 72px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-        transition: all 0.40s ease;
-        
-        .clique {
-          display: flex;
-          flex-direction: row;
-          width: 100%;
-          transition: all 0.40s ease;
-        }
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    color: $vert-clair;
+  }
+}
 
-        .card-text {
-          display: flex;
-          flex-direction: column;
-          gap: 5px;
-          margin-left: 15px;
-          width: 287px;
-          transition: all 0.40s ease;
-        }
+.card-menu:hover .fond-vert {
+  transform: translateX(0);
+}
 
-        h3 {
-          font-weight: 500;
-          font-family: $font-primary;
-          font-size: 18px;
-        }
+.card-menu:hover .clique h3,
+.card-menu:hover .clique p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: block;
+}
+ }
 
-        p {
-          font-weight: 300;
-          font-family: $font-primary;
-          font-size: 15.04px;
-          flex-wrap: wrap;
-          }
-
-        .prix {
-              margin-top: 26px;
-              margin-left: 30px;
-              font-weight: 700;
-              font-family: $font-primary;
-              font-size: 15.04px;
-        }
-        }
-
-        .titre-plus-barre {
-          display: flex;
-          flex-direction: column;
-          margin: 48px 80px 0 20px;
-        }
-
-        .separator {
-          width: 40px;
-          height: 3px;
-          border: none;
-          background: $vert-clair;
-          margin: 10px 0;
-          border-radius: 10px;
-        }
-
-           .back-button {
-          background: $gris-clair;
-          width: 100%;
-          padding-bottom: 40px;
-        }
-
-        .button-explorer2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-
-        .button-2 {
-          font-size: 16px;
-        margin-top: 40px;
-        border-radius: 40px;
-        border: transparent;
-        width: 186px;
-        height: 50px;
-        background: linear-gradient(#FF79DA,#9356DC);
-        color: white;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-        cursor: pointer;
-        transition: all 0.25s ease;
-        }
-      }
-
-      .button-explorer2 .button-2:hover {
-      opacity: 0.85;
-      box-shadow: 1px 2px 9px 5px rgba(0,0,0,0.18);
-      font-size: 16.1px;
-      }
-      
-      .fond-vert {
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 59.84px;
-      height: 100%;
-      transform: translateX(100%);
-      transition: all 0.4s ease;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: $vert-clair;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
-
-      .icone-border {
-        width: 22px;
-        border-radius: 60px;
-        padding: 1px;
-        padding-left: 4px;
-        background: $texte-footer;
-        justify-content: center;
-        align-items: center;
-        display: inline-block;
-        transition: all 0.4s ease;
-        color: $vert-clair;
-      }
-      }
-
-      .card-menu:hover .fond-vert {
-        transform: translateX(0);
-      }
-
-        .card-menu:hover .clique h3  {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        width: 100%;
-        display: block;
-      }
-
-      .card-menu:hover .clique p  {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        width: 100%;
-        display: block;
-      }
-
-      .card-menu:hover .clique {
-        transition: all 0.40s ease;
-
-        .card-text {
-          width: 230px;
-          transition: all 0.40s ease;
-        }
-      }
+ @media screen and (max-width: 480px) {
+  main .card-menu:hover .prix {
+    margin-right: 70px;
+ }
 }
  @import "desktop-restaurants.scss";

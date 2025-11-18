@@ -120,14 +120,12 @@ main .entree {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-right: 13px;
-  padding-left: 13px;
+  padding: 0 13px;
   gap: 12px;
 }
 main .card-menu {
   background: #FFFFFF;
   display: flex;
-  flex-direction: row;
   align-items: center;
   position: relative;
   border: transparent;
@@ -135,21 +133,23 @@ main .card-menu {
   border-radius: 20px;
   height: 72px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  transition: all 0.4s ease;
 }
 main .card-menu .clique {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   width: 100%;
+  gap: 55px;
+  margin-right: 15px;
   transition: all 0.4s ease;
 }
 main .card-menu .card-text {
+  flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 5px;
   margin-left: 15px;
-  width: 287px;
-  transition: all 0.4s ease;
+  max-width: calc(100% - 115px);
 }
 main .card-menu h3 {
   font-weight: 500;
@@ -163,11 +163,24 @@ main .card-menu p {
   flex-wrap: wrap;
 }
 main .card-menu .prix {
-  margin-top: 26px;
-  margin-left: 30px;
+  flex-shrink: 0;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   font-size: 15.04px;
+  margin: 0;
+  transition: all 0.4s ease;
+}
+main .card-menu .clique h3,
+main .card-menu .clique p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: block;
+}
+main .card-menu:hover .prix {
+  margin-right: 55px;
+  transition: all 0.4s ease;
 }
 main .titre-plus-barre {
   display: flex;
@@ -228,25 +241,17 @@ main .fond-vert {
 main .fond-vert .icone-border {
   width: 22px;
   border-radius: 60px;
-  padding: 1px;
-  padding-left: 4px;
+  padding: 1px 4px;
   background: #FFFFFF;
   justify-content: center;
   align-items: center;
   display: inline-block;
-  transition: all 0.4s ease;
   color: #99E2D0;
 }
 main .card-menu:hover .fond-vert {
   transform: translateX(0);
 }
-main .card-menu:hover .clique h3 {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: 100%;
-  display: block;
-}
+main .card-menu:hover .clique h3,
 main .card-menu:hover .clique p {
   overflow: hidden;
   white-space: nowrap;
@@ -254,14 +259,12 @@ main .card-menu:hover .clique p {
   width: 100%;
   display: block;
 }
-main .card-menu:hover .clique {
-  transition: all 0.4s ease;
-}
-main .card-menu:hover .clique .card-text {
-  width: 230px;
-  transition: all 0.4s ease;
-}
 
+@media screen and (max-width: 480px) {
+  main .card-menu:hover .prix {
+    margin-right: 70px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .main-2 {
     padding-left: 192px;
@@ -273,12 +276,6 @@ main .card-menu:hover .clique .card-text {
   .main-2 .menu {
     padding-left: 210px;
     padding-right: 211px;
-  }
-  .main-2 .card-menu .card-text {
-    width: 572px;
-  }
-  .main-2 .card-menu:hover .clique .card-text {
-    width: 535px;
   }
 }
 
