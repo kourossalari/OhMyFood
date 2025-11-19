@@ -686,7 +686,9 @@ footer .moins {
     padding: 0;
   }
   main .fonctionnement h2 {
-    margin-left: 18%;
+    max-width: 1090px;
+    margin: 0 auto 20px;
+    margin-top: 30px;
   }
   main .fonctionnement .fonc-ordi {
     display: flex;
@@ -703,9 +705,16 @@ footer .moins {
   main .fonctionnement .last {
     margin: 0;
   }
+  main .restaurants h2 {
+    max-width: 1090px;
+    margin: 0 auto 20px;
+    margin-top: 30px;
+  }
   main .restaurants .card-contenaire {
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+    margin: 0 auto;
   }
   main .restaurants .card-resto {
     width: 490px;
@@ -720,10 +729,6 @@ footer .moins {
   }
   main .restaurants .card-3 {
     margin-right: 100px;
-  }
-  main .restaurants h2 {
-    margin-top: 30px;
-    margin-left: 18%;
   }
   footer {
     display: flex;

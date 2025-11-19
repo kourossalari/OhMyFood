@@ -41,9 +41,11 @@ main .fonctionnement {
     height: 228.37px;
     padding: 0;
 
-    h2 {
-        margin-left: 18%;
-    }
+h2 {
+        max-width: 1090px;
+        margin: 0 auto 20px;
+        margin-top: 30px;
+        }
 
     .fonc-ordi {
     display: flex;
@@ -66,10 +68,17 @@ main .fonctionnement {
 
 main .restaurants {
 
+        h2 {
+        max-width: 1090px;
+        margin: 0 auto 20px;
+        margin-top: 30px;
+        }
 
-    .card-contenaire {
-        flex-direction: row;
-        flex-wrap: wrap;
+    .card-contenaire{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 900px;
+    margin: 0 auto;
     }
 
     .card-resto {
@@ -88,11 +97,6 @@ main .restaurants {
 
     .card-3 {
         margin-right: 100px;
-    }
-
-    h2 {
-        margin-top: 30px;
-        margin-left: 18%;
     }
 }
 
